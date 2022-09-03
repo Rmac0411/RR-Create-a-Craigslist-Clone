@@ -2,13 +2,20 @@
 
 // Import components
 import './App.css';
+import Gallery from './components/Gallery';
+import Searchbar from './components/Searchbar';
+import Directory from './components/Directory';
+import Sidebar from './components/Sidebar';
 
 function App(){
   return (
     <div>
-      <h1>craigslist</h1>
+      <searchBar/>
       <div className="App">
-        {/* Your content will go here! */}
+        <Searchbar />
+        <Directory />
+        <Gallery />
+        <Sidebar />
       </div>
     </div>
   );
